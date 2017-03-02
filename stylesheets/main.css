@@ -51,7 +51,8 @@ p {
 	}
 
 	header {
-		max-width: 250px;
+		max-width: 400px;
+		padding: 0 10px;
 	}
 }
 
