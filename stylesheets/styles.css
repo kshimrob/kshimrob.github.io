@@ -109,7 +109,7 @@ a:hover {
 
 @media screen and (max-width: 640px) {
   #main {
-  padding-top: 50px;
-  position: static;
+  padding-top: 700px;
+  position: relative;
 }
 }
