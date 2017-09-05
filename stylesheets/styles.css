@@ -104,4 +104,12 @@ a:hover {
     -webkit-background-clip: text; }
   a:hover {
     background-position: 75% 0;
-    color: transparent; } }
+    color: transparent; } 
+}
+
+@media screen and (max-width: 640px) {
+  #main {
+  padding-top: 50px;
+  position: static;
+}
+}
