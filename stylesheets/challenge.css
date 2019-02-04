@@ -165,9 +165,9 @@ h3 {
 .people-tracker button,
 .people-tracker .switch-views,
 .people-tracker .gen-info {
-		display: inline-block;
-		vertical-align: middle;
-	}
+	display: inline-block;
+	vertical-align: middle;
+}
 
 .title {
 	margin-bottom: 10px;
@@ -275,7 +275,7 @@ h3 {
 	.people-tracker .contact,
 	.people-tracker .dropdown {
 		float: right;
-    margin: 12px 0;
+    		margin: 12px 0;
 	}
 
 	.people-tracker .contact {
