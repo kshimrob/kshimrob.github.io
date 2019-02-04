@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERAL */
+* {
+	box-sizing: border-box;	
+}
+
+html,
+body,
+button {
+	font: normal 16px 'Montserrat', sans-serif;
+	color: #262626;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #005FF1;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+.tag {
+	font-size: 0.625rem;
+	text-transform: uppercase;
+}
+
+.btn-small {
+	font-weight: bold;
+	font-size: 0.75rem;
+	background-color: white;
+	border-radius: 2px;
+	padding: 2px 8px;
+	box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	transition: 0.2s ease-in-out;
+	display: inline-block;
+}
+
+.btn-small i {
+	margin-right: 3px;
+}
+
+.btn-small:hover {
+	color: white;
+	background-color: #005FF1;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.sort-btn {
+	background-color: white;
+	border-radius: 5px;
+	padding: 12px 15px;
+	border: 1px solid #DDE0EB;
+	color: #262626;
+	height: 45px;
+}
+
+.sort-btn i {
+	margin-right: 5px;
+}
+
+.support-circle {
+	height: 45px;
+	width: 45px;
+	border: 1px solid #DDE0EB;
+	border-radius: 100%;
+	font-size: 0.75rem;
+	line-height: 45px;
+	text-align: center;
+	display: inline-block;
+}
+
+.full-support {
+	border: 5px solid #4CAE50;
+	line-height: 38px;
+}
+
+.card {
+	padding: 15px;
+	border-bottom: 1px solid #DDE0EB;
+}
+
+.card:last-of-type {
+	border-bottom: 0;
+}
+
+/* DASHBOARD GENERAL */
+
+.dashboard-section {
+	background-color: #EBEEF5;
+	padding: 16px;
+	margin: 20px;
+}
+
+.section-body {
+	background-color: white;
+	border: 1px solid #DDE0EB;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+/* DASHBOARD - PEOPLE TRACKER */
+.people-tracker h2,
+.people-tracker .btn-small,
+.people-tracker .toggles,
+.people-tracker button,
+.people-tracker .switch-views,
+.people-tracker .gen-info {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+.title {
+	margin-bottom: 10px;
+}
+
+.dashboard-section .btn-small {
+	margin: 0 20px;	
+}
+
+.switch-views {
+	color: #DDE0EB;
+	font-size: 1.5rem;
+	height: 45px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 6px 10px;
+	border: 1px solid #DDE0EB;
+}
+
+.switch-views .selected {
+	color: #005FF1;
+}
+
+.switch-views i {
+	margin: 0 5px;
+}
+
+.people-tracker .support-circle {
+	margin-right: 15px;
+}
+
+.people-tracker .contact {
+	font-size: 0;
+	color: #DDE0EB;
+	max-height: 0;
+	transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.people-tracker .contact .has-info {
+	color: #005FF1;
+}
+
+.people-tracker .contact i {
+	margin-right: 8px;
+}
+
+.people-tracker .more-info {
+	display: none;
+}
+
+.people-tracker .dropdown {
+	background-color: transparent;
+	border: 0;
+	float: right;
+	margin-top: 15px;
+}
+
+.people-tracker .dropdown.open i {
+	transform: rotate(180deg);
+}
+
+.people-tracker .dropdown.open + .contact {
+	max-height: 200px;
+	transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+	font-size: 1.125rem;
+	padding: 15px 0;
+}
+
+.more-info span {
+	font-weight: bold;
+	display: block;
+}
+
+@media only screen and (min-width: 768px) {
+	.dashboard-section {
+		background-color: #EBEEF5;
+		padding: 40px;
+		margin: 20px;
+	}
+
+	.people-tracker {
+		max-width: 940px;
+	}
+
+	.dashboard-section .header {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+	}
+
+	.dashboard-section .sort-btn {
+		margin: 0 5px;
+	}
+
+	.dashboard-section .toggles {
+		float: right;
+	}
+
+	.people-tracker .card .gen-info,
+	.people-tracker .card p {
+		display: inline-block;
+	}
+
+	.people-tracker .contact,
+	.people-tracker .dropdown {
+		float: right;
+    margin: 12px 0;
+	}
+
+	.people-tracker .contact {
+		margin-right: 40px;
+		font-size: 1.125rem;
+		padding: 0;
+	}
+
+	.more-info li {
+		display: inline-block;
+		width: 20%;
+		vertical-align: top;
+	}
+
+	.people-tracker .more-info {
+		display: block;
+		max-height: 0;
+		font-size: 0;
+		transition: max-height 0.3s ease-in-out;
+	}
+
+	.people-tracker .dropdown.open + .contact {
+		padding: 0;
+	}
+	.people-tracker .dropdown.open ~ .more-info {
+		max-height: 500px;
+		font-size: 0.75rem;
+		transition: max-height 0.3s ease-in-out, padding 0.2s ease-in-out;
+		padding-top: 15px;
+	}
+}
+
+

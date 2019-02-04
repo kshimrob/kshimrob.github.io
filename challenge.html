@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>User Dashboard</title>
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="./stylesheets/challenge.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <section class="people-tracker dashboard-section">
+
+        <div class="header">
+          <div class="title">
+            <h2>4 People</h2>
+            <a href="#" class="btn-small"><i class="fas fa-file-download"></i> Export</a>
+          </div>
+          <div class="toggles">
+            <button class="sort-btn"><i class="fas fa-sort-alpha-up"></i> Last Name</button>
+            <div class="switch-views">
+                <i class="fas fa-list selected"></i>
+                <i class="far fa-chart-bar"></i>
+                <i class="far fa-map"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-body">
+          <div class="card">
+            <div class="support-circle">JC</div>
+            <div class="gen-info">
+              <h3>Jake Caputo</h3>
+              <p class="tag">Redondo Beach, CA</p>
+            </div>
+            <button class="dropdown">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="contact">
+                <i class="far fa-envelope has-info"></i>
+                <i class="fas fa-phone has-info"></i>
+                <i class="far fa-comment-alt"></i>
+                <i class="fas fa-map-marker-alt has-info"></i>
+            </div>
+            <ul class="more-info">
+                <li><span>Email:</span><a href="mailto:abc@gmail.com">abc@gmail.com</a></li>
+                <li><span>Telephone:</span><a href="tel:123-456-7890">123-456-7890</a></li>
+                <li><span>Address:</span>123 N Lauren St, Apt 2<br>Chicago, IL 60601</li>
+              </ul>
+          </div>
+          <div class="card">
+            <div class="support-circle">MG</div>
+            <div class="gen-info">
+              <h3>Martha Grant</h3>
+              <p class="tag">Henderson, TX</p>
+            </div>
+            <button class="dropdown">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            <div class="contact">
+                <i class="far fa-envelope"></i>
+                <i class="fas fa-phone has-info"></i>
+                <i class="far fa-comment-alt has-info"></i>
+                <i class="fas fa-map-marker-alt has-info"></i>
+            </div>
+            <ul class="more-info">
+                <li><span>Email:</span><a href="mailto:abc@gmail.com">abc@gmail.com</a></li>
+                <li><span>Telephone:</span><a href="tel:123-456-7890">123-456-7890</a></li>
+                <li><span>Address:</span>123 N Lauren St, Apt 2<br>Chicago, IL 60601</li>
+              </ul>
+          </div>
+          <div class="card">
+            <div class="support-circle">BG</div>
+            <div class="gen-info">
+              <h3>Barbara Glaser</h3>
+            </div>
+            <button class="dropdown">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            <div class="contact">
+                <i class="far fa-envelope has-info"></i>
+                <i class="fas fa-phone has-info"></i>
+                <i class="far fa-comment-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <ul class="more-info">
+                <li><span>Email:</span><a href="mailto:abc@gmail.com">abc@gmail.com</a></li>
+                <li><span>Telephone:</span><a href="tel:123-456-7890">123-456-7890</a></li>
+                <li><span>Address:</span>123 N Lauren St, Apt 2<br>Chicago, IL 60601</li>
+              </ul>
+          </div>
+          <div class="card">
+            <div class="support-circle full-support">AC</div>
+            <div class="gen-info">
+              <h3>Anjuli Cameron</h3>
+              <p class="tag">Washington, DC</p>
+            </div>
+            <button class="dropdown">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            <div class="contact">
+                <i class="far fa-envelope has-info"></i>
+                <i class="fas fa-phone has-info"></i>
+                <i class="far fa-comment-alt has-info"></i>
+                <i class="fas fa-map-marker-alt has-info"></i>
+            </div>
+            <ul class="more-info">
+              <li><span>Email:</span><a href="mailto:abc@gmail.com">abc@gmail.com</a></li>
+              <li><span>Telephone:</span><a href="tel:123-456-7890">123-456-7890</a></li>
+              <li><span>Address:</span>123 N Lauren St, Apt 2<br>Chicago, IL 60601</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./app.js"></script>
+  </body> 
+</html>
