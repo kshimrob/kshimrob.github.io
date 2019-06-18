@@ -51,7 +51,8 @@ p {
 	}
 
 	header {
-		max-width: 250px;
+		max-width: 400px;
+		padding: 0 10px;
 	}
 }
 
@@ -138,6 +139,7 @@ footer a {
 	text-decoration: none;
 	color: white;
 	font-size: 1.5rem;
+	transition: color 0.35s;
 }
 
 footer a:hover {
