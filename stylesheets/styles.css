@@ -92,6 +92,19 @@ a {
 a:hover {
   color: #89fffd; }
 
+.skills-container {
+  font-family: monospace;
+  padding: 20px 20px 20px 40px;
+  background: rgba(356, 356, 356, 0.5);
+  border-radius: 9px;
+  column-count: 2;
+  color: #434f6a;
+}
+
+.skills-container li {
+  list-style: square;
+}
+
 @media (-webkit-min-device-pixel-ratio: 0) {
   a {
     background-color: #ef32d9;
