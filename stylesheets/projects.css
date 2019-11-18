@@ -101,7 +101,10 @@ header > p:first-of-type {
   list-style: square;
 }
 
-.skills-container img {
+.single-ux-card {
+  padding: 0 20px;
+}
+.single-ux-card img {
   width: 100%;
 }
 main {
