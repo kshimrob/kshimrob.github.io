@@ -88,7 +88,22 @@ header > p:first-of-type {
 }
 
 /*** Projects ***/
+.skills-container {
+  font-family: monospace;
+  padding: 20px 20px 20px 40px;
+  background: rgba(356, 356, 356, 0.5);
+  border-radius: 9px;
+  column-count: 2;
+  color: #434f6a;
+}
 
+.skills-container li {
+  list-style: square;
+}
+
+.skills-container img {
+  width: 100%;
+}
 main {
   max-width: 400px;
   margin: 0 auto;
