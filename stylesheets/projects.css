@@ -95,6 +95,10 @@ main {
   text-align: left;
 }
 
+.large-container {
+  max-width: 800px;
+}
+
 .project {
   border-top: 1px dashed white;
   border-bottom: 1px dashed white;
